@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/png" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Cellport Philippines</title>
+</head>
+<body>
+    <!--NAV BAR SECTION-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="images/logo.jpg" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cellport Philippines</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">BEFORE AFTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <button class="appointment_button"><i class="bi bi-journal-plus"></i> Appointment</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--BOOTSTRAP SLIDER SECTION-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/cosmetic-face.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>An aesthetic touch for your dream look</h2>
+                    <p>Rediscover youth with our professional doctor staff.</p>
+                    <button class="learn_more">Learn More<i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/cosmetic-injection.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Perfect face aesthetics of your dreams</h2>
+                    <p>We provide smoother and more beautiful skin.</p>
+                    <button class="learn_more">Learn More<i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hair-transplant.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Aesthetic touch in Hair Transplantation</h2>
+                    <p>We restore your lost hair.</p>
+                    <button class="learn_more">Learn More<i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section container my-5">
+        <div class="row text-center">
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/arm_aesthetcs.png" alt="Arm Aesthetics">
+                    <p><strong>Arm Aesthetics</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/butt_aesthetics.png" alt="Butt Aesthetics">
+                    <p><strong>Butt Aesthetics</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/body_aesthetics.png" alt="Body Aesthetics">
+                    <p><strong>Body Aesthetics</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/breast_aesthetics.png" alt="Breast Aesthetics">
+                    <p><strong>Breast Aesthetics</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/liposuction_aesthetics.png" alt="Liposuction Aesthetics">
+                    <p><strong>Liposuction Aesthetics</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/lip_aesthetics.png" alt="Lip Aesthetics">
+                    <p><strong>Lip Aesthetics</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second row (6 items, no offset) -->
+        <div class="row text-center mt-4">
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/eye_aesthetics.png" alt="Eye Aesthetics">
+                    <p><strong>Eye Aesthetics</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/vaser.png" alt="Vaser Liposuction">
+                    <p><strong>Vaser Liposuction</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/eyebrow_aesthetics.png" alt="Eyebrow Aesthetics">
+                    <p><strong>Eyebrow Aesthetics</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/brazillian_butt_lift.png" alt="Brazilian Butt Lift">
+                    <p><strong>Brazilian Butt Lift</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/breast_augmentation.png" alt="Breast Augmentation">
+                    <p><strong>Breast Augmentation</strong></p>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="service-card">
+                    <img src="images/facial_aesthetics.png" alt="Facial Aesthetics">
+                    <p><strong>Facial Aesthetics</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text + Button -->
+        <div class="services-header">
+            <h3 class="services-title">Check out our Aesthetic and plastic surgery services for a natural look</h3>
+            <button class="view-services-btn">View All Services →</button>
+        </div>
+    </section>
+
+    <!-- AESTHETIC SECTION -->
+    <section class="aesthetic-section">
+        <div class="aesthetic-touch">
+            <!-- LEFT SIDE -->
+            <div>
+                <div class="image-grid">
+                    <div class="body-cosmetics">
+                        <img src="images/body-surgery.jpg" alt="">
+                    </div>
+                    <div class="plastic-cosmetics">
+                        <img src="images/plastic-surgery.jpg" alt="">
+                    </div>
+                </div>
+                <div class="laser-cosmetics">
+                    <img src="images/laser-cosmetic.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div>
+                <div class="professional-title">
+                    <h2 class="header1">Professional Aesthetic Touches</h2>
+                    <span class="text">We always undertake the task of pioneering and guiding in the sector, especially in Aesthetic and Plastic Surgery. The goals, mission and vision of our hospital, which provides services with advanced techniques in Aesthetic and Plastic Surgery and the most successful doctors in their fields, are as follows;</span>
+                </div>
+                <div class="goal-title">
+                    <h2 class="header"><i class="bi bi-bullseye icon"></i>  Our Goal</h2>
+                    <span class="text">To contribute to the health education of our entire society, to provide error-free service by ensuring the satisfaction of our patients at the highest level.</span>
+                </div>
+                <div class="mission-title">
+                    <h2 class="header"><i class="bi bi-flag icon"></i>  Our Mission</h2>
+                    <span class="text">To make our hospital the most preferred healthcare institution with our services focused on the satisfaction of its patients, relatives and employees.</span>
+                </div>
+                <div class="vision-title">
+                    <h2 class="header"><i class="bi bi-eye icon"></i>  Our Vision</h2>
+                    <span class="text">To be among the leading hospitals by using the correct diagnosis and treatment methods with our innovative, rational, principled and responsible approach.</span>
+                </div>
+                <div class="btn-gtk">
+                    <button class="get-to-know">Get to know us →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-us">
+        <div class="btn-func">
+            <button class="btn-about">About Us</button>
+            <button class="btn-mission">Our Mission</button>
+            <button class="btn-vision">Our Vision</button>
+            <button class="btn-values">Our Values</button>
+        </div>
+        <div class="images">
+            <img src="images/laser-face.jpg" alt="">
+        </div>
+        <div class="list">
+            <div class="title">
+                <h4>We apply the latest technological devices and methods in international quality standards.</h4>
+            </div>
+            <ul>
+                <li>Facial Aesthetics,</li>
+            </ul>
+            <ul>
+                <li>Skin Care,</li>
+            </ul>
+            <ul>
+                <li>Arm Aesthetics,</li>
+            </ul>
+            <ul>
+                <li>Body Aesthetics,</li>
+            </ul>
+            <ul>
+                <li>Epilation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <div class="content">
+            <h2 class="header">Fill in the form, we'll contact you.</h2>
+            <span class="text">For detailed information about Aesthetic and Plastic Surgery operation, leave your number to us and our specialists will call you back.</span>
+        </div>
+        <div class="inputs">
+            <form action="#">
+                <input type="text" placeholder="Full Name" class="name">
+                <input type="email" placeholder="Email" class="email">
+                <input type="text" placeholder="Phone" class="phone">
+            </form>
+            <button class="btn-callback">Call Back →</button>
+        </div>
+    </section>
+
+    <!--BEFORE AFTER SECTION-->
+    <section class="before-after">
+        <div class="content-title">
+            <h2 class="title">Before-After</h2>
+            <span class="text">Look at the difference before and after procedures.</span>
+            <button class="btn-lip">Lip Aesthetics</button>
+            <button class="btn-vaser">Vaser Aesthetics</button>
+            <button class="btn-facial">Facial Aesthetics</button>
+        </div>
+        <div class="animate">
+            <img src="images/before-after.jpg" alt="" class="lip-surgery">
+        </div>
+    </section>
+
+    <!--DOCTOR'S SECTION -->
+    <section class="doctors">
+        <div class="content-title">
+            <h2>Our Expert Doctors</h2>
+            <span>Your health is entrusted to us.</span>
+        </div>
+        <div class="container-doctor">
+                <div class="doctor-card">
+                    <img src="images/doctor1.png" alt="">
+                    <h2>Olivia Lee</h2>
+                    <span>Plastic Surgery</span>
+                    <div class="social-icons">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-threads-fill"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/doctor2.png" alt="">
+                    <h2>Jack Smith</h2>
+                    <span>Plastic Surgery</span>
+                    <div class="social-icons">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-threads-fill"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/doctor3.png" alt="">
+                    <h2>Adamn Brown</h2>
+                    <span>Plastic Surgery</span>
+                    <div class="social-icons">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-threads-fill"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="images/doctor4.png" alt="">
+                    <h2>Michael Lee</h2>
+                    <span>Plastic Surgery</span>
+                <div class="social-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-threads-fill"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER SECTION -->
+    <section class="customer">
+        <div class="customer-satisfaction">
+            <div class="like-logo">
+                <img src="images/rating.png" alt="logo" />
+            </div>
+            <div class="content-title">
+                <h2 class="title">What are our Customers Saying?</h2>
+                <span class="text">You can reach the satisfaction and opinions of the people who receive service in our hospitals.</span>
+            </div>
+
+            <div class="customer-wrapper">
+                <div class="container-customer">
+                    <div class="customer-card">
+                        <span class="comments">Body aesthetics is the clinic I go to. They were very helpful duringthe treatment process. I got the body I wanted. Thank you.</span>
+                        <img src="images/woman.jpg" alt="" />
+                        <span class="customer-name">Jane Doe</span>
+                    </div>
+                    <div class="customer-card">
+                        <span class="comments">It feels so good since I lose my fats on my bellies since that was a big insecurity to me. Thank you.</span>
+                        <img src="images/man1.jpg" alt="" />
+                        <span class="customer-name">John Doe</span>
+                     </div>
+                    <div class="customer-card">
+                        <span class="comments">My hair already gone when I was 16. Thanks to these specialist because they make my hair grow and I'm looking young.</span>
+                        <img src="images/man2.jpg" alt="" />
+                        <span class="customer-name">Jomari Doe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PARTNERSHIP CLASS-->
+    <section class="partnership">
+        <div class="partnershim-img">
+            <img src="images/surgery1.png" alt="" class="partnership1">
+        </div>
+        <div class="partnershim-img">
+            <img src="images/surgery2.png" alt="" class="partnership2">
+        </div>
+        <div class="partnershim-img">
+            <img src="images/surgery3.png" alt="" class="partnership3">
+        </div>
+        <div class="partnershim-img">
+            <img src="images/surgery4.png" alt="" class="partnership4">
+        </div>
+        <div class="partnershim-img">
+            <img src="images/surgery5.png" alt="" class="partnership5">
+        </div>
+        </div>
+    </section>
+
+    <!--CLIENT SECTION-->
+    <div class="sample-image">
+
+        <!-- Left image -->
+        <div class="client">
+            <img src="images/client.jpg" alt="">
+        </div>
+
+        <!-- Right text -->
+        <div class="content">
+            <div class="content-title">
+                <h2>Aesthetic: Your Plastic Surgery FAQs</h2>
+                <span>Welcome to Aesthetic Answers, your trusted source for all inquiries regarding aesthetic and plastic surgery.</span>
+                <ul>
+                    <li><a href="#">Transformation Tactics</a></li>
+                    <ul>
+                        <li>Discover strategies for enhancing your aesthetic appeal through plastic surgery.</li>
+                    </ul>
+                        <li><a href="#">Navigating Plastic Surgery Risks</a></li>
+                    <ul>
+                        <li>Prioritize safety and informed decision-making when considering plastic surgery.</li>
+                    </ul>
+                        <li><a href="#">Cosmetic Solutions for Aging Skin</a></li>
+                    <ul>
+                        <li>Combat the signs of aging with cosmetic treatments tailored to rejuvenate your skin.</li>
+                    </ul>
+                        <li><a href="#">Body Contouring Basics</a></li>
+                    <ul>
+                        <li>Explore the realm of body contouring procedures designed to sculpt and refine your physique.</li>
+                    </ul>
+                        <li><a href="#">Nurturing Your Recovery</a></li>
+                    <ul>
+                        <li>Ensure a smooth and successful recovery following plastic surgery with proper post-procedure care.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--NEWS SECTION-->
+    <section class="news"> 
+        <div class="news-article">
+            <div class="image-logo">
+                <img src="images/customer-review.png" alt="">
+            </div>
+            <div class="content-title">
+                <div class="title-text">
+                    <h2>Recent News & Article</h2>
+                    <span>Information on Aesthetics and Plastic Surgery.</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="news-image-article">
+                    <img src="images/liposuction.jpg" alt="">
+                    <span class="text">02.02.2024 - Aesthetic & Plastic Surgery</span>
+                    <h2 class="title">Liposuction</h2>
+                    <span class="par">Liposuction, laser liposuction and slim liposuction are applied to many areas...</span>
+                    <button class="btn-more">More</button>
+                </div>
+                <div class="news-image">
+                    <img src="images/face-surgery.jpg" alt="">
+                    <span class="text">02.02.2024 - Aesthetic & Plastic Surgery</span>
+                    <h2 class="title">Fat Injection</h2>
+                    <span class="par">All individuals resort to various methods to make the face appear fuller and brighter...</span>
+                    <button class="btn-more">More</button>
+                </div>
+                <div class="news-image">
+                    <img src="images/woman-model.jpg" alt="">
+                    <span class="text">02.02.2024 - Aesthetic & Plastic Surgery</span>
+                    <h2 class="title">How to Prevent Jowl Sagging?</h2>
+                    <span class="par">The common problem of both sexes in our female or male society is jowl sagging, women...</span>
+                    <button class="btn-more">More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer>
+  <section class="footer">
+    <div class="container">
+
+      <!-- LEFT COLUMN -->
+      <div class="left">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="">
+        </div>
+        <div class="details">
+          <span><i class="bi bi-pin-map"></i> Manila, Philippines</span>
+          <span><i class="bi bi-telephone"></i> +63 123 456</span>
+          <span><i class="bi bi-envelope"></i> Email</span>
+        </div>
+        <div class="icons">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-threads-fill"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+
+      <!-- MIDDLE COLUMN -->
+      <div class="middle">
+        <div class="content">
+          <h2>Join Our Newsletter</h2>
+          <span>Subscribe to be informed about our services and products.</span>
+        </div>
+        <form action="">
+          <input type="email" placeholder="Enter your email">
+          <button>Subscribe →</button>
+        </form>
+        <div class="credit">
+          <span>© 2024 Aeste - All Rights Reserved.</span>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right">
+        <div class="sections">
+          <h2>Services</h2>
+          <span>Arm Aesthetics</span>
+          <span>Butt Aesthetics</span>
+          <span>Body Aesthetics</span>
+          <span>Breast Aesthetics</span>
+          <span>Liposuction Aesthetics</span>
+          <span>Lip Aesthetics</span>
+        </div>
+        <div class="sections">
+          <h2>⇠ ⇢</h2>
+          <span>Eye Aesthetics</span>
+          <span>Vaser Liposuction</span>
+          <span>Eyebrow Aesthetics</span>
+          <span>Brazillian Butt Lift</span>
+          <span>Breast Augmentation</span>
+          <span>Facial Aesthetics</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
